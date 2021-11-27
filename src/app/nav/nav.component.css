@@ -1,0 +1,11 @@
+nav{
+  display: flex;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 2em;
+  padding: 1rem;
+
+
+  color:rgba(black,0.4);
+  background-color: rgba(162, 195, 214,0.8);
+}

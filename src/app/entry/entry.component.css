@@ -1,0 +1,30 @@
+section{
+  padding: 1em;
+  width: 80vw;
+}
+
+form{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input,button{
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+
+input{
+  flex-grow: 1;
+  box-shadow: 0 0.8px rgb(121, 120, 120);
+}
+
+
+
+button{
+  width: 60px;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  box-shadow: 0.8px 0.8px rgb(121, 120, 120);
+  font-weight: 600;
+}
