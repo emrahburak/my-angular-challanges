@@ -1,7 +1,4 @@
-section{
-  padding: 1em;
-  width: 80vw;
-}
+
 
 form{
   width: 100%;
@@ -9,10 +6,7 @@ form{
   justify-content: space-between;
 }
 
-input,button{
-  padding: 0.5em;
-  font-size: 1.2em;
-}
+
 
 input{
   flex-grow: 1;
@@ -27,4 +21,6 @@ button{
   border-bottom-right-radius: 5%;
   box-shadow: 0.8px 0.8px rgb(121, 120, 120);
   font-weight: 600;
+  background-color: rgba(162, 195, 214,0.8);
 }
+
