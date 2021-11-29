@@ -1,12 +1,29 @@
-main{
-  width: 100%;
-  display: flex;
-  flex-flow: column wrap;
-}
+
 
 li{
+  display: flex;
+  justify-content: space-between;
   list-style: none;
-
 }
+
+a:hover{
+  background-color: rgba(162, 195, 214,0.8);
+  font-weight: 600;
+}
+
+
+.list-item{
+  margin-bottom: 1em;
+  /* padding: 0.4em; */
+}
+
+.list-item:first-of-type{
+  flex-grow: 1;
+  box-shadow: 0 0.9px rgb(121, 120, 120);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: auto;
+}
+
+
 
 

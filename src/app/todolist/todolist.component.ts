@@ -19,5 +19,13 @@ export class TodolistComponent implements OnInit {
         this.todoList.push(todo);
       }
     });
+
+    this.dataService.testSubject.subscribe(test => {
+      console.log(test);
+    });
+  }
+
+  deleteTodo({_id}:any){
+    this.dataService.removeTodo(_id);
   }
 }

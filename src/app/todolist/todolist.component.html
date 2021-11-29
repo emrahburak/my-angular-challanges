@@ -1,5 +1,14 @@
-<main>
+<section>
   <ul>
-    <li  *ngFor="let todo of todoList">{{todo.text}}</li>
+    <div class="list-item-group">
+      <li *ngFor="let todo of todoList">
+        <div class="list-item">
+          {{ todo.text }}
+        </div>
+        <div class="list-item">
+          <button type="button" (click)="deleteTodo(todo)">Delete</button>
+        </div>
+      </li>
+    </div>
   </ul>
-</main>
+</section>

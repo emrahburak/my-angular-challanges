@@ -8,12 +8,43 @@
   font-family: sans-serif;
 }
 
-section,main{
-  padding: 1em;
-  width: 80vw;
+main{
+  padding: 4rem;
+  background-color: rgb(245, 202, 189);
 }
 
-input,button,li{
-  padding: 0.5em;
-  font-size: 1.2em;
+input,button{
+  padding: 1em 2em;
 }
+
+button{
+  width: 100px;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  box-shadow: 0.8px 0.8px rgb(121, 120, 120);
+  font-weight: 600;
+  background-color: rgba(162, 195, 214,0.8);
+}
+/* .container{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  background-color: rgb(245, 202, 189);
+  height: 100%;
+}
+
+
+
+section,main{
+  padding: 1em;
+  width: 500px;
+}
+
+input,button,li,a{
+  padding: 0.2em;
+  font-size: 1.1em;
+}
+
+input,li{
+  box-shadow: 0.3px 0.8px rgb(121, 120, 120);
+} */

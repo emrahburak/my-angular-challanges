@@ -1,26 +1,22 @@
 
 
-form{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+section{
+  margin-bottom: 6rem;
 }
 
+.form-group{
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-between; */
+}
 
 
 input{
   flex-grow: 1;
-  box-shadow: 0 0.8px rgb(121, 120, 120);
 }
 
 
 
-button{
-  width: 60px;
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
-  box-shadow: 0.8px 0.8px rgb(121, 120, 120);
-  font-weight: 600;
-  background-color: rgba(162, 195, 214,0.8);
-}
+
+
 

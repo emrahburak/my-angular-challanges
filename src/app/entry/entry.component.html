@@ -1,7 +1,8 @@
-
 <section>
-<form  [formGroup]="todoForm" (ngSubmit)="createTodo()">
-  <input formControlName="title"  type="text">
-  <button [disabled]="todoForm.invalid" type="submit">Add</button>
-</form>
+  <form [formGroup]="todoForm" (ngSubmit)="createTodo()">
+    <div class="form-group">
+      <input formControlName="title" type="text" />
+      <button [disabled]="todoForm.invalid" type="submit">Add</button>
+    </div>
+  </form>
 </section>
