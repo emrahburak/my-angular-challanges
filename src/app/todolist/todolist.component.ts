@@ -12,17 +12,11 @@ export class TodolistComponent implements OnInit {
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.todoList = JSON.parse(localStorage.getItem('minimal-todos-angular'));
-    this.dataService.todo.subscribe((todo) => {
-      if (todo != null) {
-        console.log('todo list ', todo);
-        this.todoList.push(todo);
+    // this.todoList = JSON.parse(localStorage.getItem('minimal-todos-angular'));
+    this.dataService.todos.subscribe((todos) => {
+        this.todoList = todos;
       }
-    });
-
-    this.dataService.testSubject.subscribe(test => {
-      console.log(test);
-    });
+    );
   }
 
   deleteTodo({_id}:any){

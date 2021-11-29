@@ -1,28 +1,30 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { Todo } from '../models/todo';
 
 @Injectable({
   providedIn: 'root',
 })
-export class DataService {
-  todo = new BehaviorSubject<Todo>(null);
-  testSubject = new BehaviorSubject<any[]>([]);
+export class DataService  {
+  todos = new BehaviorSubject<any[]>(this.getState());
 
-  constructor() {}
+  constructor() {
+  }
+
+
 
   addTodo(text: string) {
+
     let state: any[] = this.getState()
 
     let newTodo = new Todo(text);
-    newTodo.id = String(state.length + 1);
+    newTodo.id = String(Date.now());
     state.push(newTodo);
 
     this.setState(state);
 
-    this.testSubject.next(state);
 
-    this.todo.next(newTodo);
+    this.todos.next(state);
   }
 
   removeTodo(id:string){
@@ -30,8 +32,7 @@ export class DataService {
     let newState = state.filter(x => x._id !== id);
     this.setState(newState);
 
-    this.todo.next(null);
-    this.testSubject.next(newState);
+    this.todos.next(newState);
   }
 
 

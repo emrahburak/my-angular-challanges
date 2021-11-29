@@ -6,10 +6,6 @@ li{
   list-style: none;
 }
 
-a:hover{
-  background-color: rgba(162, 195, 214,0.8);
-  font-weight: 600;
-}
 
 
 .list-item{
