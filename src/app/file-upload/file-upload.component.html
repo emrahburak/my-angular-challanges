@@ -1,11 +1,14 @@
-  <div class="card-container">
-    <a
-      class="card"
-      target="_blank"
-      rel="noopener"
-      href="#"
-    >
-      <span>File Upload</span>
-    </a>
+  <div class="card-container ">
+    <div class="card upload-card">
+
+        <label for="file" class="custom-file-upload">
+            Chose File
+          <input   type="file" name="file" id="file" (change)="handleFileInput($event.target)" >
+        </label>
+        <p>
+          {{fileUpload? fileUpload.name : ''}}
+        </p>
+          <button>Upload</button>
+    </div>
   </div>
 

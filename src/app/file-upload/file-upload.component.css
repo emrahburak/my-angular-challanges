@@ -1,0 +1,24 @@
+input[type="file"]{
+  display: none;
+}
+
+.custom-file-upload,
+.upload-card > button{
+
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #ebe2df;
+    padding: 1em;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.custom-file-upload:hover,.upload-card > button:hover{
+  transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+p{
+  flex-grow: 1;
+  padding: 1em;
+}
